@@ -236,7 +236,7 @@ p {
 }
 
 .special-title {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -256,7 +256,7 @@ p {
 /* *Чим займаємось */
 
 .doings {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .doing-list {
@@ -280,6 +280,8 @@ p {
 
 /* *Наша команда */
 .team {
+  padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 
@@ -391,7 +393,16 @@ p {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
+}
+.carts {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+
   border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 }
 
 .examples-link {
