@@ -45,21 +45,15 @@ p {
 }
 
 /* *Хедер  */
-.header {
+
+.container.header {
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  justify-content: space-between;
 }
 
-.list.menu {
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-right: 331px;
-}
 .page-navi {
   display: flex;
-  text-align: center;
+  align-items: center;
 
   background-color: var(--background-color);
   font-weight: 500;
@@ -69,10 +63,15 @@ p {
   color: #212121;
 }
 
+.menu {
+  display: flex;
+}
+
+.menu .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
-  margin-left: 215px;
-  margin-top: 24px;
-  margin-bottom: 25px;
   margin-right: 93px;
 
   font-family: Raleway;
@@ -89,12 +88,12 @@ p {
 }
 
 .page-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   color: #212121;
-}
-
-.list > .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .page-nav-link.current {
@@ -103,7 +102,6 @@ p {
 
 .contact {
   display: flex;
-  text-align: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -111,22 +109,17 @@ p {
   letter-spacing: 0.02em;
 }
 
-.contact.list {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.contact-link {
-  color: #757575;
-  text-decoration: none;
-}
-
-.contact.list > .item:first-child {
+.contact .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact.list > .item:last-child {
-  margin-right: 215px;
+.contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: #757575;
+  text-decoration: none;
 }
 
 .page-nav-link:hover,
