@@ -14,7 +14,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 ul {
@@ -131,10 +131,16 @@ p {
 
 /* *Футер */
 .footer {
+  padding-top: 94px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 20px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -153,12 +159,16 @@ p {
 }
 
 .footer-address a {
+  display: block;
+
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
 /* *Герой */
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
   margin-bottom: 94px;
 
   background-color: #2f303a;
@@ -213,6 +223,7 @@ p {
 
 .special-title {
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -291,7 +302,7 @@ p {
 }
 
 .item .item-text {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   font-weight: 400;
   font-size: 16px;
@@ -302,6 +313,18 @@ p {
 }
 
 /* ПОРТФОЛИО */
+
+/* *фільтр */
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filter-list .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter-btn {
   cursor: pointer;
@@ -326,6 +349,21 @@ p {
 .filter-btn:focus {
   background-color: var(--acent-color);
   color: var(--background-color);
+}
+
+/* *приклади робіт */
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.examples-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .examples-link {
