@@ -159,6 +159,8 @@ p {
 
 /* *Герой */
 .hero {
+  margin-bottom: 94px;
+
   background-color: #2f303a;
   text-align: center;
 }
@@ -196,7 +198,17 @@ p {
 
 /* *Особливості */
 .special {
+  margin-bottom: 94px;
+
   background-color: var(--background-color);
+}
+
+.list-special {
+  display: flex;
+}
+
+.list-special .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .special-title {
@@ -217,7 +229,22 @@ p {
 }
 
 /* *Чим займаємось */
+
+.doings {
+  margin-bottom: 94px;
+}
+
+.doing-list {
+  display: flex;
+}
+
+.doing-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .doings-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -231,7 +258,18 @@ p {
   background-color: #f5f4fa;
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -240,19 +278,26 @@ p {
   color: #212121;
 }
 
-.team-item .item-title {
+.item .item-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
-.team-item .item-text {
+.item .item-text {
+  margin-bottom: 30px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
