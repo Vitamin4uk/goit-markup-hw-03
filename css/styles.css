@@ -47,7 +47,6 @@ p {
 /* *Хедер  */
 
 .line {
-  margin-bottom: 94px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -174,7 +173,6 @@ p {
 .hero {
   padding-bottom: 200px;
   padding-top: 200px;
-  margin-bottom: 94px;
 
   background-color: #2f303a;
   text-align: center;
@@ -222,7 +220,8 @@ p {
 
 /* *Особливості */
 .special {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background-color: var(--background-color);
 }
@@ -281,6 +280,7 @@ p {
 /* *Наша команда */
 .team {
   padding-bottom: 94px;
+  padding-top: 94px;
 
   background-color: #f5f4fa;
 }
@@ -294,7 +294,6 @@ p {
 }
 
 .team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -329,6 +328,11 @@ p {
 }
 
 /* ПОРТФОЛИО */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* *фільтр */
 .filter-list {
@@ -386,7 +390,6 @@ p {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  margin-bottom: 94px;
 }
 
 .examples-item {
